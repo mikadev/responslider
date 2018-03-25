@@ -92,6 +92,9 @@ $.fn.responSlider = function(options){
 				OBJ.find("ul.responslider-paginate").css("float","right");
 			break;
 			default:
+				//parent
+				var pgMarginT  = OBJ.find("ul.responslider-paginate").css("margin-top");
+				//children
 				var pgMarginL  = OBJ.find("ul.responslider-paginate li").css("margin-left");
 				var pgMarginR  = OBJ.find("ul.responslider-paginate li").css("margin-right");
 				var pgPaddingL = OBJ.find("ul.responslider-paginate li").css("padding-left");
@@ -105,7 +108,7 @@ $.fn.responSlider = function(options){
 						+ 2*i
 					);
 				OBJ.find("ul.responslider-paginate").css({
-					"margin" : "0 auto"
+					"margin" : parseInt(pgMarginT)+"px auto 0 auto"
 				});
 				var PAGINATEWIDTH = (OBJ.find("ul.responslider-paginate").width());
 		}
@@ -221,7 +224,7 @@ $.fn.responSlider = function(options){
 			.find("div.responslider-navigation").css({
 				"position" : "absolute",
     			"top"      : 0,
-    			"z-index"  : 9999,
+    			"z-index"  : 100,
 			});
 			OBJPARENT
 			.parent()
