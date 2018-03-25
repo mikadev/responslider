@@ -1,0 +1,86 @@
+
+div.responslider-navigation{
+
+} 
+
+div.responslider-prev,
+div.responslider-next
+{
+  text-align: center;
+  background: url('../../media/prev.png') center;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity .3s linear;
+}
+div.responslider-prev:hover,
+div.responslider-next:hover
+{
+  opacity: 1;
+}
+div.responslider-next
+{
+  background: url('../../media/next.png') center;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+div#responslider-globalcontent{
+/*   position: absolute;
+  top:9%;
+  z-index: 3; */
+}
+
+div#slider{
+  min-width: 250px;
+}
+
+/* PAGINATE */
+div.responslider-parent ul.responslider-paginate{
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  height: 37px;
+}
+div.responslider-parent ul.responslider-paginate li{
+  float: left;
+  padding: 7px 0;
+  margin: 5px 5px;
+  font-size: 9px;
+  color: #272727;
+  line-height: 6px;
+  border: 1px solid #D5D5D5;
+  width: 19px;
+  height: 5px;
+  transition: background-color .3s;
+  box-shadow: 0 0 1px #E4E4E4;
+  text-align: center;
+}
+
+div.responslider-parent ul.responslider-paginate li:hover{
+  background-color: #fcfcfc;
+}
+div.responslider-parent ul.responslider-paginate li.active{
+  background: #3d3d3d; 
+  border: 1px solid #3d3d3d;
+  color: #fff;
+  line-height: 6px;
+}
+
+div.responslider-parent p.inside{
+  position: absolute;
+  z-index: 999;
+  margin: 0 0 0 10px;
+  background-color: #2C2B2B;
+  color: #E2E2E2;
+  font-size: 13px;
+  padding: 20Px 25px;
+  font-weight: bold;
+  top: 5%;
+  opacity: 0.87;
+  right: 10px;
+}
